@@ -44,6 +44,8 @@ app.get("/:word/echo", (req, res) => {
 });
 
 app.get("/name", (req, res) => {
+
+  // example of url: http://localhost:3000/name?first=Huy&last=Tran
   let firstName = req.query.first;
   let lastName = req.query.last;
   res.json({ name: firstName + " " + lastName });
